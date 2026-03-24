@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.packages
+.pubspec.lock
+
+# Build outputs
+build/
+.dart_tool/
+.gradle/
+android/app/build/
+ios/Pods/
+*.class
+*.jar
+*.apk
+*.ipa
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.*.local
+*.env
+
+# Logs
+*.log
+logs/
+
+# Mobile specific
+*.g.dart
