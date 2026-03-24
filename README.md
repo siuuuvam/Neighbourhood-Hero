@@ -1,110 +1,63 @@
-# Neighborhood Hero
+# Neighbourhood Hero
 
-A hyperlocal community assistance platform built with Flutter and Supabase.
+Think of it as the neighbor you call when you're locked out, or the friend who helps you move. A platform where people in your area can ask for help and help others out.
 
-## Features
+## What it does
 
-- **User Authentication**: Secure sign up and login with Supabase Auth
-- **Geolocation-based Discovery**: Find nearby help requests using PostGIS
-- **Real-time Map**: Interactive map showing nearby requests
-- **Karma System**: Earn points by helping neighbors
-- **Request Management**: Create, accept, complete, and cancel requests
-- **User Profiles**: Track your activity and reputation
+- Post requests for help with anything from picking up groceries to fixing things around the house
+- Browse a map to see what people nearby need assistance with
+- Build your reputation by helping others and earn karma points
+- Track your activity and see how much of a community hero you are
 
-## Tech Stack
+## The Stack
 
-- **Frontend**: Flutter 3.x
-- **Backend**: Node.js with Express
-- **Database**: PostgreSQL with PostGIS
-- **Auth & Storage**: Supabase
-- **Maps**: OpenStreetMap (flutter_map)
+- Flutter for the mobile app
+- Node.js backend
+- PostgreSQL with PostGIS for location data
+- Supabase handles auth and database
 
-## Setup Instructions
+## Getting Started
 
-### Prerequisites
-
-- Flutter SDK 3.0+
-- Node.js 18+
-- PostgreSQL with PostGIS extension
-- Supabase account
-
-### Database Setup
-
-1. Create a new Supabase project
-2. Enable the PostGIS extension in the SQL editor:
-   ```sql
-   CREATE EXTENSION IF NOT EXISTS postgis;
-   ```
-3. Run the schema from `database/schema.sql`
-
-### Backend Setup
+### Backend
 
 ```bash
 cd backend
 npm install
 ```
 
-Create a `.env` file:
+Create a `.env` file with your Supabase credentials:
 ```
 PORT=3000
 SUPABASE_URL=your_supabase_url
 SUPABASE_KEY=your_service_role_key
 ```
 
-Run the backend:
 ```bash
 npm run dev
 ```
 
-### Mobile App Setup
+### Database
+
+Set up Supabase and run the schema from `database/schema.sql`. You'll need to enable the PostGIS extension:
+
+```sql
+CREATE EXTENSION IF NOT EXISTS postgis;
+```
+
+### Mobile App
 
 ```bash
 cd mobile
 flutter pub get
 ```
 
-Create a `.env` file:
-```
-SUPABASE_URL=your_supabase_url
-SUPABASE_ANON_KEY=your_anon_key
-MAPBOX_ACCESS_TOKEN=your_mapbox_token
-BACKEND_URL=http://your_backend_url:3000/api
-```
+Add your environment variables and run:
 
-Run the app:
 ```bash
 flutter run
 ```
 
-## Project Structure
-
-```
-hood/
-├── mobile/                 # Flutter mobile app
-│   ├── lib/
-│   │   ├── config/        # App configuration
-│   │   ├── models/        # Data models
-│   │   ├── providers/     # State management
-│   │   ├── screens/       # UI screens
-│   │   ├── services/      # API services
-│   │   └── widgets/       # Reusable widgets
-│   └── pubspec.yaml
-├── backend/                # Node.js backend
-│   └── src/
-│       ├── routes/        # API routes
-│       └── services/      # Business logic
-└── database/
-    └── schema.sql         # Database schema
-```
-
-## API Endpoints
-
-- `POST /api/complete-task` - Complete a task and award karma
-- `GET /api/user/:userId` - Get user profile
-- `GET /api/karma-level/:points` - Get karma level info
-- `POST /api/karma/award` - Award karma points
-
-## Karma System
+## Karma Levels
 
 | Points | Level |
 |--------|-------|
