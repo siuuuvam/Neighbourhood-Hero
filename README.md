@@ -1,6 +1,6 @@
 # Neighbourhood Hero
 
-Think of it as the neighbor you call when you're locked out, or the friend who helps you move. A platform where people in your area can ask for help and help others out.
+Think of it as the neighbour you call when you're locked out, or the friend who helps you move. A platform where people in your area can ask for help and help others out.
 
 ## What it does
 
