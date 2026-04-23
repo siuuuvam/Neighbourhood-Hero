@@ -404,7 +404,7 @@ class _HomeMapScreenState extends State<HomeMapScreen> with TickerProviderStateM
         return AppColors.textLight;
     }
   }
-
+  
   IconData _getMarkerIcon(String status) {
     switch (status) {
       case 'open':
