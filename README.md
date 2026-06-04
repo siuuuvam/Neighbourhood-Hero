@@ -1,29 +1,28 @@
-# Neighbourhood Hero
+# 🛡️ Neighbourhood Hero
 
 Think of it as the neighbour you call when you're locked out, or the friend who helps you move. A platform where people in your area can ask for help and help others out.
 
-## What it does
+## 📋 What it does
 
 - Post requests for help with anything from picking up groceries to fixing things around the house
 - Browse a map to see what people nearby need assistance with
 - Build your reputation by helping others and earn karma points
 - Track your activity and see how much of a community hero you are
 
-## The Stack
+## 🛠️ The Stack
 
-- Flutter for the mobile app
-- Node.js backend
-- PostgreSQL with PostGIS for location data
-- Supabase handles auth and database
+- **Mobile App:** Flutter
+- **Backend:** Node.js
+- **Database:** PostgreSQL with PostGIS for location data
+- **Authentication:** Supabase handles auth and database core management
 
-## Getting Started
+## 🚀 Getting Started
 
-### Backend
+### ⚙️ Backend
 
 ```bash
 cd backend
 npm install
-```
 
 Create a `.env` file with your Supabase credentials:
 ```
@@ -57,15 +56,15 @@ Add your environment variables and run:
 flutter run
 ```
 
-## Karma Levels
+### 🏆 Karma Levels
 
 | Points | Level |
-|--------|-------|
-| 0-49 | New Neighbor |
-| 50-199 | Active Neighbor |
-| 200-499 | Neighborhood Hero |
-| 500+ | Neighborhood Legend |
+| :--- | :--- |
+| **0 - 49** | New Neighbor 🌾 |
+| **50 - 199** | Active Neighbor 🧭 |
+| **200 - 499** | Neighborhood Hero 🛡️ |
+| **500+** | Neighborhood Legend 👑 |
 
-## License
 
-MIT
+## 📄 License
+This project is licensed under the MIT License.
